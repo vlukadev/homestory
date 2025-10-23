@@ -1,0 +1,26 @@
+{
+  "mainElements": {
+    "locationSearchInput": "#location_input",
+    "updatingResultsLoader": "h3=Updating Results...",
+    "focusResult":"#focusResultsList",
+    "defaultMap": "[data-cy='hs_map']"
+  },
+  "search": {
+    "searchLocationButton": "//button[@aria-label='Search' and @data-qa='magnifying-button']"  
+  },
+  "listingCard": {
+    "listingHeader": "//h2[contains(@class, 'listings__homesForSale')]",
+    "listings": "//a[contains(@class,'listingItem__cardWrap') and @aria-label]",
+    "listingPrice": ".//*[contains(@class, 'listingItem__price')]"
+
+ },
+ "priceFilter": {
+    "priceFilterButton": "//button[contains(@class, 'priceRange__toggleButton')]",
+    "minPriceInput": "//input[@aria-label='Minimum Price']",
+    "maxPriceInput": "//input[@aria-label='Maximum Price']",
+    "minPriceSelectBase": "#react-select-2-option-",
+    "maxPriceSelectBase": "#react-select-11-option-"
+    
+    
+  }
+}

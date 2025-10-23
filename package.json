@@ -1,0 +1,33 @@
+{
+  "name": "homestory",
+  "scripts": {
+    "init": "cross-env-shell BABEL_DISABLE_CACHE=1 babel-node Initializer.js",
+    "chrome": "wdio run ./wdio.conf.mjs --suite",
+    "chromedriver:install": "cd lib && node WebdriverInstall.js",
+    "chromedriver:delete": "rm -rf ./webdriver --yes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.22.19",
+    "@babel/plugin-transform-runtime": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/register": "^7.22.15",
+    "@wdio/allure-reporter": "^9.5.0",
+    "@wdio/cli": "^9.5.7",
+    "@wdio/local-runner": "^9.5.7",
+    "@wdio/mocha-framework": "^9.5.0",
+    "@wdio/spec-reporter": "^9.5.0",
+    "cross-env": "^7.0.3",
+    "wdio-wait-for": "^3.0.11"
+  },
+  "dependencies": {
+    "@babel/node": "^7.22.19",
+    "@babel/runtime": "^7.23.1",
+    "adm-zip": "^0.5.10",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5"
+  }
+}
